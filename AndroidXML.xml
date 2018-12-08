@@ -1,0 +1,15 @@
+<templateSet group="AndroidXML">
+  <template name="dblyt" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;&#10;  &lt;data&gt;&#10;  &lt;/data&gt; &#10;  &lt;$ROOT_TAG$ android:layout_width=&quot;match_parent&quot;&#10;               android:layout_height=&quot;match_parent&quot;&gt;&#10;  &#10;  &lt;/$ROOT_TAG$&gt;&#10;&lt;/layout&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="ROOT_TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="vrb" value="&lt;variable name=&quot;$name$&quot;&#10;          type=&quot;$type$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="camelCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
